@@ -24,8 +24,8 @@ header {
 }
 
 header.shrunk {
-    height: 1rem;
-    background: rgba(208, 208, 255, 0.4);
+    height: 1.5rem;
+    background: rgba(255, 251, 235, 0.4);
     border-bottom: rgba(24, 23, 23, 0.24) solid 1px;
 }
 
