@@ -133,23 +133,15 @@ body, html {
 }
 
 .noticeContent {
+    display: flex;
     padding: 10px;
     font-weight: 500;
     color: rgb(24, 23, 23);
+    background-color: rgba(255, 161, 0, 0.1);
 }
 
-.noticeTitle {
-    background-color: rgba(255, 145, 0, 0.30);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 10px;
-    color: rgb(255, 145, 0);
-    font-weight: bold;
-}
-
-.noticeTitle::before {
-    margin-right: 5px;
-    margin-left: 5px;
+.noticeContent::before {
+    margin: auto 10px auto 5px;
     vertical-align: middle;
     content: url(/assets/svg/warning.svg);
 }
@@ -163,4 +155,34 @@ hr {
 
 .logo {
     content: url("/assets/svg/logo_original.svg");
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .headerSubtext {
+        display: none;
+        visibility: hidden;
+    }
+
+    .container-container .logo {
+        margin-left: 0;
+        content: url("/assets/svg/logo.svg");
+    }
+
+    .mainArticle, .aboutSomnacreare {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .notice, .text {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .aboutSomnacreare {
+        margin-left: 0;
+    }
+
+
 }
