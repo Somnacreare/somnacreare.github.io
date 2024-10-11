@@ -1,0 +1,52 @@
+.footer {
+    position: relative;
+    background: rgba(199, 199, 199, 0.22);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    color: #6c6868;
+    margin-top: auto;
+}
+
+.footer .logo {
+    margin-left: 100px;
+}
+
+.footer .row {
+    width: 100%;
+    padding: 0.6% 0;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    transition: 0.15s;
+    color: #6c6868;
+}
+
+.footer .row svg {
+    margin-right: 5px;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.textLink {
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.footer .row a:hover {
+    color: #181717;
+}
+
+.footer .row a:hover svg {
+    color: #181717;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        padding: 5%;
+    }
+}

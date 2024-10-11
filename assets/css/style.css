@@ -1,0 +1,166 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+    font-family: "Poppins", system-ui;
+    -webkit-user-drag: none;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #181717;
+    -ms-flex-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.title {
+    color: #181717;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    font-family: "Playfair Display", sans-serif;
+    position: relative;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.browseOtherBuilds {
+    text-decoration: none;
+    color: rgba(24, 23, 23, 0.55);
+    font-weight: 600;
+    transition: color 0.25s;
+}
+
+.browseOtherBuilds:hover {
+    color: rgb(24, 23, 23);
+}
+
+.downloadButtons {
+    margin-top: 40px;
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: #222;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    transition: background-color 0.25s;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+.mainArticle {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.aboutSomnacreare .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.aboutSomnacreare .text {
+    font-size: 21px;
+}
+
+.aboutSomnacreare {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.faq {
+    margin: 30px;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    max-width: 600px;
+}
+
+.commentary {
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 16px;
+    max-width: 600px;
+    color: rgba(25, 26, 33, 0.53);
+    transition: color 0.25s;
+}
+
+.commentary::before {
+    content: "🔗 ";
+}
+
+.commentary:hover {
+    color: rgb(0, 0, 0);
+}
+
+.notice {
+    border-radius: 5px;
+    border: 1px solid #ff9100;
+    font-size: 14px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.noticeContent {
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(24, 23, 23);
+}
+
+.noticeTitle {
+    background-color: rgba(255, 145, 0, 0.30);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    color: rgb(255, 145, 0);
+    font-weight: bold;
+}
+
+.noticeTitle::before {
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+    content: url(/assets/svg/warning.svg);
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(131, 132, 136);
+    border: none;
+}
+
+.logo {
+    content: url("/assets/svg/logo_original.svg");
+}

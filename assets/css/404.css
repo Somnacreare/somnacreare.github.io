@@ -1,0 +1,33 @@
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+@keyframes textColorChange {
+    0%, 100% {
+        color: #C9D6FF;
+    }
+    50% {
+        color: #E2E2E2;
+    }
+}
+
+/* Title styling */
+.title, .text, .link {
+    font-weight: 900;
+    position: relative;
+    color: white;
+}
+
+.shiny {
+    animation: textColorChange 6s ease-in-out infinite;
+}
+
+.shinyBut20 {
+    animation: textColorChange 20s ease-in-out infinite;
+}

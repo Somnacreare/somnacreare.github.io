@@ -1,0 +1,73 @@
+.container-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 2rem;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all 300ms;
+    color-scheme: dark;
+    font-family: "Prompt", system-ui;
+    user-select: none;
+    backdrop-filter: blur(10px);
+    background: rgba(7, 8, 10, 0);
+    border-bottom: rgba(0, 0, 0, 0) solid 1px;
+    padding: 20px 40px;
+    line-height: 50%;
+}
+
+header.shrunk {
+    height: 1rem;
+    background: rgba(208, 208, 255, 0.4);
+    border-bottom: rgba(24, 23, 23, 0.24) solid 1px;
+}
+
+.headerTitle {
+    color: white;
+    letter-spacing: 0.1em;
+    margin-left: 50px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.headerSubtext {
+    margin-left: 10px;
+    font-family: "Playfair Display", system-ui;
+    color: rgba(24, 23, 23, 0.49);
+}
+
+.headerSecondTitle {
+    color: white;
+    margin-left: 10px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+}
+
+.headerLinks {
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.headerLink {
+    color: rgba(25, 26, 33, 0.53);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.headerLink:hover {
+    color: rgb(25, 26, 33);
+}
