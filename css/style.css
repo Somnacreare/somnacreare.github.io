@@ -169,6 +169,10 @@ hr {
         content: url("/assets/svg/logo.svg");
     }
 
+    .footer .logo {
+        margin-left: 0;
+    }
+
     .mainArticle, .aboutSomnacreare {
         text-align: center;
         margin-right: auto;
