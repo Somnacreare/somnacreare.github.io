@@ -1,9 +1,9 @@
-<svg width="40" height="40" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_201_46)">
-<mask id="mask0_201_46" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="100" y="100" width="100" height="100">
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="100" cy="100" r="100" fill="white"/>
+<mask id="mask0_218_187" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="100" y="100" width="100" height="100">
 <path d="M200 100C200 113.132 197.413 126.136 192.388 138.268C187.362 150.401 179.997 161.425 170.711 170.711C161.425 179.997 150.401 187.362 138.268 192.388C126.136 197.413 113.132 200 100 200L100 100H200Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_201_46)">
+<g mask="url(#mask0_218_187)">
 <path d="M106.001 106H144.001V144H106.001V106Z" stroke="#181717" stroke-width="12"/>
 <path d="M156.001 106H194.001V144H156.001V106Z" stroke="#181717" stroke-width="12"/>
 <path d="M106.001 156H144.001V194H106.001V156Z" stroke="#181717" stroke-width="12"/>
@@ -12,10 +12,10 @@
 <path d="M100.001 100.5L186.501 118L186.501 136.5L173.001 136.5L100.001 100.5Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 <path d="M100.001 100.5L137.001 172L137.001 186.5L123.001 186.5L100.001 100.5Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 </g>
-<mask id="mask1_201_46" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+<mask id="mask1_218_187" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
 <path d="M-1.66893e-06 100C-1.66893e-06 86.8678 2.58658 73.8642 7.61205 61.7317C12.6375 49.5991 20.0035 38.5752 29.2893 29.2893C38.5752 20.0035 49.5991 12.6375 61.7317 7.61205C73.8642 2.58658 86.8678 -5.74026e-07 100 0L100 100H-1.66893e-06Z" fill="white"/>
 </mask>
-<g mask="url(#mask1_201_46)">
+<g mask="url(#mask1_218_187)">
 <path d="M93.999 94H55.999V56H93.999V94Z" stroke="#181717" stroke-width="12"/>
 <path d="M43.999 94H5.99902V56H43.999V94Z" stroke="#181717" stroke-width="12"/>
 <path d="M93.999 44H55.999V6H93.999V44Z" stroke="#181717" stroke-width="12"/>
@@ -24,10 +24,10 @@
 <path d="M99.999 99.5L13.4994 82L13.4994 63.5L26.999 63.5L99.999 99.5Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 <path d="M99.999 99.5001L62.999 28L62.999 13.5L76.9987 13.5L99.999 99.5001Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 </g>
-<mask id="mask2_201_46" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="100" y="0" width="100" height="100">
+<mask id="mask2_218_187" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="100" y="0" width="100" height="100">
 <path d="M200 100C200 86.8678 197.413 73.8642 192.388 61.7317C187.362 49.5991 179.997 38.5752 170.711 29.2893C161.425 20.0035 150.401 12.6375 138.268 7.61205C126.136 2.58658 113.132 -5.74026e-07 100 0L100 100H200Z" fill="white"/>
 </mask>
-<g mask="url(#mask2_201_46)">
+<g mask="url(#mask2_218_187)">
 <path d="M106.001 94H144.001V56H106.001V94Z" stroke="#181717" stroke-width="12"/>
 <path d="M156.001 94H194.001V56H156.001V94Z" stroke="#181717" stroke-width="12"/>
 <path d="M106.001 44H144.001V6H106.001V44Z" stroke="#181717" stroke-width="12"/>
@@ -36,10 +36,10 @@
 <path d="M100.001 99.5L186.501 82L186.501 63.5L173.001 63.5L100.001 99.5Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 <path d="M100.001 99.5001L137.001 28L137.001 13.5L123.001 13.5L100.001 99.5001Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 </g>
-<mask id="mask3_201_46" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="100" width="100" height="100">
+<mask id="mask3_218_187" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="100" width="100" height="100">
 <path d="M-1.66893e-06 100C-1.66893e-06 113.132 2.58658 126.136 7.61205 138.268C12.6375 150.401 20.0035 161.425 29.2893 170.711C38.5752 179.997 49.5991 187.362 61.7317 192.388C73.8642 197.413 86.8678 200 100 200L100 100H-1.66893e-06Z" fill="white"/>
 </mask>
-<g mask="url(#mask3_201_46)">
+<g mask="url(#mask3_218_187)">
 <path d="M93.999 106H55.999V144H93.999V106Z" stroke="#181717" stroke-width="12"/>
 <path d="M43.999 106H5.99902V144H43.999V106Z" stroke="#181717" stroke-width="12"/>
 <path d="M93.999 156H55.999V194H93.999V156Z" stroke="#181717" stroke-width="12"/>
@@ -48,10 +48,4 @@
 <path d="M99.999 100.5L13.4994 118L13.4994 136.5L26.999 136.5L99.999 100.5Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 <path d="M99.999 100.5L62.999 172L62.999 186.5L76.9987 186.5L99.999 100.5Z" fill="#181717" stroke="#181717" stroke-width="3"/>
 </g>
-</g>
-<defs>
-<clipPath id="clip0_201_46">
-<rect width="200" height="200" fill="white"/>
-</clipPath>
-</defs>
 </svg>
