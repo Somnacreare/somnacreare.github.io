@@ -184,6 +184,11 @@ hr {
         margin-left: 25px;
     }
 
+    .downloadButtons .browseOtherBuilds {
+        display: flex;
+        justify-content: center;
+    }
+
     .aboutSomnacreare {
         margin-left: 0;
     }
