@@ -1,6 +1,5 @@
 .footer {
     position: relative;
-    background: rgba(199, 199, 199, 0.22);
     backdrop-filter: blur(8px);
     text-align: center;
     align-items: center;
@@ -10,7 +9,6 @@
 }
 
 .footer .logo {
-    margin-left: 100px;
 }
 
 .footer .row {

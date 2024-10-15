@@ -82,3 +82,5 @@ $(window).scroll(function() {
         header.removeClass('shrunk');
     }
 });
+
+const iframe = document.querySelector('.discordWidget');

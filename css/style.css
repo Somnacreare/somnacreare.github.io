@@ -1,5 +1,5 @@
 :root {
-    color-scheme: dark;
+
 }
 
 body {
@@ -11,6 +11,11 @@ body {
     flex-direction: column;
     color: #181717;
     -ms-flex-align: center;
+    align-items: center;
+}
+
+span .widgetFooterInfo-1qYCVB {
+    content: "test";
 }
 
 body, html {
@@ -53,7 +58,7 @@ body, html {
 .button {
     font-family: "Poppins", sans-serif;
     color: white;
-    background-color: #222;
+    background: rgba(24, 23, 23, 1);
     font-weight: 500;
     border-radius: 0.5rem;
     font-size: 1rem;
@@ -65,7 +70,8 @@ body, html {
     display: inline-flex;
     align-items: center;
     border: none;
-    transition: background-color 0.25s;
+    transition: background 0.25s;
+    flex-direction: column;
 }
 
 .button:hover {
@@ -73,9 +79,11 @@ body, html {
 }
 
 .mainArticle {
+    flex-wrap: nowrap;
     margin-top: 200px;
+    padding-right: 600px;
+    margin-left: 50px;
     margin-bottom: 50px;
-    margin-left: 100px;
 }
 
 .aboutSomnacreare .title {
@@ -83,6 +91,7 @@ body, html {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 0;
+    flex-wrap: nowrap;
 }
 
 .aboutSomnacreare .text {
@@ -90,9 +99,8 @@ body, html {
 }
 
 .aboutSomnacreare {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .faq {
@@ -109,19 +117,18 @@ body, html {
 .commentary {
     font-weight: 600;
     text-decoration: none;
-    margin-top: 15px;
     font-size: 16px;
     max-width: 600px;
     color: rgba(25, 26, 33, 0.53);
     transition: color 0.25s;
+    margin-bottom: 10px;
 }
 
 .commentary::before {
-    content: "🔗 ";
 }
 
 .commentary:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(88, 101, 242);
 }
 
 .notice {
@@ -153,24 +160,47 @@ hr {
     border: none;
 }
 
-.logo {
-    content: url("/assets/svg/logo_original.svg");
-    margin-left: 50px;
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
     .headerSubtext {
         display: none;
         visibility: hidden;
     }
 
-    .container-container .logo {
+    header {
+        height: 2rem;
+    }
+
+    header.shrunk {
+        height: 2rem;
+        background: rgb(255, 255, 255);
+        border-bottom: rgba(24, 23, 23, 0.24) solid 1px;
+    }
+
+    .logo {
         margin-left: 0;
+        padding-left: 20px;
         content: url("/assets/svg/logo.svg");
+    }
+
+    .headerTitleLinks {
+        visibility: hidden;
+        display: none;
+    }
+
+    .container-container {
+        padding-right: 20px;
     }
 
     .footer .logo {
         margin-left: 0;
+    }
+
+    .mainArticle {
+        flex-wrap: nowrap;
+        margin-top: 200px;
+        padding-right: 0;
+        margin-left: 0;
+        margin-bottom: 50px;
     }
 
     .mainArticle, .aboutSomnacreare {
