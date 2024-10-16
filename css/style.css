@@ -98,13 +98,20 @@ body, html {
     font-size: 21px;
 }
 
+.figure {
+    font-size: 100px;
+    position: absolute;
+    margin-top: 0px;
+}
+
 .aboutSomnacreare {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 100px;
 }
 
 .faq {
-    margin: 30px;
+    margin-bottom: 50px;
 }
 
 .text {
