@@ -1,10 +1,3 @@
-.container-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-right: 100px;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -15,60 +8,29 @@ header {
     width: 100%;
     transition: all 200ms;
     color-scheme: dark;
-    font-family: "Prompt", system-ui;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
     user-select: none;
-    backdrop-filter: blur(20px);
-    background: rgba(7, 8, 10, 0);
     border-bottom: rgba(0, 0, 0, 0) solid 1px;
-    padding: 20px 40px;
+    padding: 20px 0 20px 0;
 }
 
-.logo {
-    content: url("/assets/svg/logo_original.svg");
-    padding-left: 100px;
+header svg {
+    margin-left: 100px;
 }
 
-header.shrunk {
-    height: 1.5rem;
-    background: rgba(255, 251, 235, 0.4);
-    border-bottom: rgba(24, 23, 23, 0.24) solid 1px;
+header svg path {
+    transition: all 200ms;
+    fill: var(--color-dark);
 }
 
-.headerTitle {
-    color: white;
-    letter-spacing: 0.1em;
-    margin-left: 50px;
-    font-weight: 900;
-    font-size: 40px;
+.headerMainLinks::before {
+    content: "•";
+    color: var(--color-dark-rgba);
 }
 
-.headerSubtext {
-    margin-left: 10px;
-    font-family: "Playfair Display", system-ui;
-    color: rgba(24, 23, 23, 0.49);
-}
-
-.headerSecondTitle {
-    color: white;
-    margin-left: 10px;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    font-size: 30px;
-}
-
-.headerLinks {
+.headerMiscLinks, .headerMainLinks {
     text-decoration: none;
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.headerTitleLinks {
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
     font-weight: 600;
     margin-left: 20px;
     display: flex;
@@ -76,12 +38,56 @@ header.shrunk {
     gap: 15px;
 }
 
-.headerLink {
-    color: rgba(25, 26, 33, 0.53);
-    text-decoration: none;
-    transition: all 0.25s;
+.headerMainLinks {
+    margin-left: 20px;
 }
 
-.headerLink:hover {
-    color: rgb(25, 26, 33);
+.headerMainLinks a, .headerMiscLinks a {
+    color: var(--color-dark-rgba);
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.headerMiscLinks {
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.headerMainLinks a, .headerMiscLinks a {
+    color: var(--color-dark-rgba);
+}
+
+.headerMainLinks a:hover {
+    color: var(--color-dark-hover);
+}
+
+.headerMiscLinks a:hover {
+    color: var(--color-dark-rgba);
+}
+
+header.shrunk {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    height: 1.5rem;
+
+    svg path {
+        fill: #FFF;
+    }
+
+    .headerMainLinks::before {
+        content: "•";
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .headerMainLinks a, .headerMiscLinks a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .headerMainLinks a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .headerMiscLinks a:hover {
+        color: white;
+    }
 }

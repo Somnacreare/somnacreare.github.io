@@ -1,26 +1,43 @@
 :root {
-
+    --color-dark: #181717;
+    --color-dark-rgba: rgba(24, 23, 23, 0.55);
+    --color-dark-hover: rgb(24, 23, 23);
+    --color-light-text: rgba(24, 23, 23, 0.3);
+    --color-warning: #ff9100;
+    --color-notice-bg: rgba(255, 161, 0, 0.1);
+    --color-border: rgb(131, 132, 136);
+    --color-button-bg: rgba(24, 23, 23, 1);
+    --color-button-hover: #333;
+    --color-footer-border: rgba(24, 23, 23, 0.24);
+    --color-background: #fff;
 }
 
 body {
+    background: var(--color-background);
     font-family: "Poppins", system-ui;
     -webkit-user-drag: none;
     overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #181717;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-span .widgetFooterInfo-1qYCVB {
-    content: "test";
-}
-
-body, html {
+    color: var(--color-dark);
+    transition: all 100ms;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
-    padding: 0;
+}
+
+path {
+    fill: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-dark);
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .bold {
@@ -28,38 +45,25 @@ body, html {
     font-weight: 700;
 }
 
-.title {
-    color: #181717;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    font-family: "Playfair Display", sans-serif;
-    position: relative;
-    font-weight: 900;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .browseOtherBuilds {
     text-decoration: none;
-    color: rgba(24, 23, 23, 0.55);
+    color: var(--color-dark-rgba);
     font-weight: 600;
-    transition: color 200ms;
+    transition: all 100ms;
 }
 
 .browseOtherBuilds:hover {
-    color: rgb(24, 23, 23);
+    color: var(--color-dark-hover);
 }
 
 .downloadButtons {
     margin-top: 40px;
 }
 
-.button {
+.downloadButtons button {
     font-family: "Poppins", sans-serif;
     color: white;
-    background: rgba(24, 23, 23, 1);
-    font-weight: 500;
+    background: var(--color-button-bg);
     border-radius: 0.5rem;
     font-size: 1rem;
     line-height: 2rem;
@@ -67,81 +71,98 @@ body, html {
     cursor: pointer;
     text-align: center;
     margin-right: 0.5rem;
-    display: inline-flex;
-    align-items: center;
     border: none;
-    transition: background 200ms;
-    flex-direction: column;
+    transition: background 100ms;
 }
 
-.button:hover {
-    background-color: #333;
+.downloadButtons button:hover {
+    background-color: var(--color-button-hover);
+}
+
+.mainArticle, .aboutSomnacreare {
+    padding-right: 600px;
+}
+
+.dreamingLetter {
+    font-size: 70px;
+    animation: rotateLullaby 6s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    display: inline-block;
+    transform-origin: top; /* Rotate from the top */
+}
+
+.rope {
+    position: absolute;
+    width: 1px; /* Thickness of the "rope" */
+    top: 0;
+    left: 25px;
+    height: 232px; /* Height of the rope */
+    background: var(--color-dark);
+    transform-origin: top; /* Rotate from the top */
+    animation: rotateLullabyRope 6s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes rotateLullaby {
+    0%, 100% {
+        transform: rotate(3deg) translateX(-10px) translateY(5px);
+    }
+    50% {
+        transform: rotate(-3deg) translateX(10px) translateY(5px);
+    }
+}
+
+@keyframes rotateLullabyRope {
+    0%, 100% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
 }
 
 .mainArticle {
+    position: relative;
+    width: 100%;
     flex-wrap: nowrap;
-    margin-top: 200px;
-    padding-right: 600px;
-    margin-left: 50px;
+    padding-top: 200px;
     margin-bottom: 50px;
+    margin-left: 8%;
 }
 
-.aboutSomnacreare .title {
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 0;
-    flex-wrap: nowrap;
-}
-
-.aboutSomnacreare .text {
-    font-size: 21px;
-}
-
-.figure {
-    font-size: 100px;
-    position: absolute;
-    margin-top: 0px;
+.mainArticle h2 {
+    font-family: Poppins, system-ui;
+    font-weight: 500;
+    max-width: 600px;
+    padding-top: 20px;
+    margin-left: 1%;
+    font-size: 24px;
 }
 
 .aboutSomnacreare {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
+    max-width: 600px;
+    margin-left: 10%;
 }
 
-.faq {
-    margin-bottom: 50px;
+.aboutSomnacreare h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.aboutSomnacreare p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
 }
 
 .text {
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: 22px;
-    max-width: 600px;
-}
-
-.commentary {
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 16px;
-    max-width: 600px;
-    color: rgba(25, 26, 33, 0.53);
-    transition: color 200ms;
-    margin-bottom: 10px;
-}
-
-.commentary::before {
-}
-
-.commentary:hover {
-    color: rgb(88, 101, 242);
 }
 
 .notice {
     border-radius: 5px;
-    border: 1px solid #ff9100;
-    font-size: 14px;
+    border: 1px solid var(--color-warning);
+    font-size: 15px;
     margin-top: 20px;
     max-width: 600px;
 }
@@ -150,8 +171,8 @@ body, html {
     display: flex;
     padding: 10px;
     font-weight: 500;
-    color: rgb(24, 23, 23);
-    background-color: rgba(255, 161, 0, 0.1);
+    color: var(--color-dark);
+    background-color: var(--color-notice-bg);
 }
 
 .noticeContent::before {
@@ -160,46 +181,34 @@ body, html {
     content: url(/assets/svg/warning.svg);
 }
 
-hr {
-    height: 1px;
-    width: 100%;
-    background-color: rgb(131, 132, 136);
-    border: none;
-}
-
 @media only screen and (max-width: 950px) {
-    .headerSubtext {
-        display: none;
-        visibility: hidden;
+    header {
+        height: 1.5rem;
     }
 
-    header {
-        height: 2rem;
+    .mainArticle, .aboutSomnacreare {
+        padding-right: 0;
     }
 
     header.shrunk {
-        height: 2rem;
-        background: rgb(255, 255, 255);
-        border-bottom: rgba(24, 23, 23, 0.24) solid 1px;
+        height: 1.5rem;
+        background: rgb(0, 0, 0);
+        border-bottom: var(--color-footer-border) solid 1px;
     }
 
-    .logo {
-        margin-left: 0;
-        padding-left: 20px;
-        content: url("/assets/svg/logo.svg");
+    header .logo {
+        height: 2.5rem;
+        content: url("/assets/svg/logo-alt.svg");
+        margin-left: 50px;
     }
 
-    .headerTitleLinks {
+    .headerMainLinks {
         visibility: hidden;
         display: none;
     }
 
-    .container-container {
-        padding-right: 20px;
-    }
-
-    .footer .logo {
-        margin-left: 0;
+    .headerMiscLinks {
+        margin-right: 20px;
     }
 
     .mainArticle {
@@ -216,6 +225,20 @@ hr {
         margin-left: auto;
     }
 
+    .aboutSomnacreare h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 0;
+        flex-wrap: nowrap;
+    }
+
+    .aboutSomnacreare p {
+        font-size: 19px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     .notice, .text {
         margin-right: 25px;
         margin-left: 25px;
@@ -225,10 +248,4 @@ hr {
         display: flex;
         justify-content: center;
     }
-
-    .aboutSomnacreare {
-        margin-left: 0;
-    }
-
-
 }
