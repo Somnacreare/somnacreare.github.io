@@ -6,7 +6,7 @@ header {
     top: 0;
     z-index: 999;
     width: 100%;
-    transition: all 200ms;
+    transition: all 400ms;
     color-scheme: dark;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
@@ -20,7 +20,7 @@ header svg {
 }
 
 header svg path {
-    transition: all 200ms;
+    transition: all 400ms;
     fill: var(--color-dark);
 }
 
@@ -45,7 +45,7 @@ header svg path {
 .headerMainLinks a, .headerMiscLinks a {
     color: var(--color-dark-rgba);
     text-decoration: none;
-    transition: all 200ms;
+    transition: all 400ms;
 }
 
 .headerMiscLinks {
