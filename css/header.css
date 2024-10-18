@@ -20,7 +20,7 @@ header svg {
 }
 
 header svg path {
-    transition: all 400ms;
+    transition: all 0.7s;
     fill: var(--color-dark);
 }
 
@@ -45,7 +45,7 @@ header svg path {
 .headerMainLinks a, .headerMiscLinks a {
     color: var(--color-dark-rgba);
     text-decoration: none;
-    transition: all 400ms;
+    transition: all 0.7s;
 }
 
 .headerMiscLinks {
